@@ -1,0 +1,39 @@
+@import "nav";
+
+@font-face {
+  font-family: "Akrobat Semibold";
+  src: url(/assets/fonts/akrobat-semibold.otf) format("opentype");
+}
+
+body {
+  margin: 1.5rem 0 3rem 0;
+
+  font-family: "Akrobat Semibold", Arial, sans-serif; /* Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif; */
+  color: #CCCCCC;
+
+  background-color: black;
+  background-image: url(/assets/images/backgrounds/threehornsdivide.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+main {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+  }
+
+  main {
+    font-size: 1.1rem;
+  }
+}

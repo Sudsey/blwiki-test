@@ -1,0 +1,22 @@
+---
+layout: default
+stylesheet: gun_page
+---
+
+<section id="gun-card">
+    {% include gun_card.html
+        game=page.game
+        rarity=page.rarity
+        image=page.image
+        name=page.gun-name
+        manufacturer=page.manufacturer
+        type=page.type
+        red-text-name=page.red-text-name
+        red-text-effect=page.red-text-effect
+        info=page.info
+    %}
+</section>
+
+<section id="content">
+    {{ content }}
+</section>

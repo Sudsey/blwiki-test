@@ -1,0 +1,26 @@
+{% comment %}
+    Include parameters:
+        - game: "bl1", "bl2", "tps", "bl3"
+        - rarity: "common", "uncommon", "rare", "epic", "legendary", "pearlescent", "seraph"
+        - image: Filename (relative to /assets/images/guns/<game>/)
+        - name: Name of the gun
+        - manufacturer: Manufacturer of the gun
+        - type: Type of the gun e.g. "Pistol", "Shotgun"
+        - red-text-name: The red text itself
+        - red-text-effect: What the red text does
+        - info: Any additional information
+{% endcomment %}
+
+<div class="gun-card gc-game-{{ include.game }} gc-rarity-{{ include.rarity }}">
+    <img class="gc-image" src="/assets/images/guns/{{ include.game }}/{{ include.image }}" alt="{{ include.name }} Image">
+    <div class="gc-data">
+        <div class="gc-section gc-name">{{ include.name }}</div>
+        <div class="gc-section gc-manufacturer">{{ include.manufacturer }}</div>
+        <div class="gc-section gc-type">{{ include.type }}</div>
+        <div class="gc-section">
+            <div class="gc-red-text-name">{{ include.red-text-name }}</div>
+            <div class="gc-red-text-effect">{{ include.red-text-effect }}</div>
+        </div>
+        <div class="gc-section gc-info">{{ include.info }}</div>
+    </div>
+</div>

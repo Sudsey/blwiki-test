@@ -1,0 +1,6 @@
+collections_dir: data
+
+collections:
+  guns_bl3:
+    output: true
+    permalink: /guns/bl3/:name

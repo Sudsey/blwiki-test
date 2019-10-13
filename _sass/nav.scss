@@ -1,0 +1,39 @@
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  margin: 0 1.5rem 2.5rem 1.5rem;
+  padding: 1rem;
+
+  background-color: rgba(50, 50, 50, 0.75);
+}
+
+nav > * {
+  width: 10rem;
+
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  nav {
+    flex-direction: column;
+
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  nav > * {
+    font-size: 1.5rem;
+  }
+
+  nav > *:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+
+  #logo {
+    width: 7.5rem;
+  }
+}

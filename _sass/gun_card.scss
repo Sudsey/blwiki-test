@@ -1,0 +1,108 @@
+@font-face {
+  font-family: "Space Marine";
+  src: url(/assets/fonts/space-marine.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Akrobat Semibold";
+  src: url(/assets/fonts/akrobat-semibold.otf) format("opentype");
+}
+
+.gun-card {
+  position: relative;
+
+  width: 20rem;
+
+  overflow: auto;
+  clip-path: polygon(2.5rem 0, 100% 0, 100% calc(100% - 2.5rem), calc(100% - 2.5rem) 100%, 0 100%, 0 2.5rem);
+
+  background-color: #00ACEC;
+
+  font-family: "Space Marine", monospace;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.gc-game-bl3::after {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+
+  width: 2em;
+  height: 2em;
+
+  background-image: url(/assets/images/icons/gun-card/bl3.png);
+  background-size: 100% 100%;
+
+  content: "";
+}
+
+.gc-image {
+  width: calc(100% - 1rem);
+
+  margin: 0.5rem 0 0 0.5rem;
+  clip-path: polygon(2.3rem 0, 100% 0, 100% calc(100% - 1.5rem), calc(100% - 1.5rem) 100%, 0 100%, 0 2.3rem);
+}
+
+.gc-data {
+  margin: -0.8rem 0.5rem 0.5rem 0.5rem;
+  clip-path: polygon(0 1.3rem, calc(100% - 1.3rem) 1.3rem, 100% 0, 100% calc(100% - 2.2rem), calc(100% - 2.2rem) 100%, 0 100%);
+
+  background-color: #12161F;
+}
+
+/*.gc-section {
+  width: 113%;
+
+  transform-origin: 0;
+  transform: scaleX(0.85);
+}*/
+
+.gc-name {
+  padding: 2.2rem 0.5rem 0.3rem 0.5rem;
+}
+
+.gc-rarity-legendary .gc-name {
+  background-color: #C48A40;
+}
+
+.gc-section:not(.gc-name) {
+  padding: 1rem 0.5rem 0 0.5rem;
+}
+
+.gc-section:last-child {
+  padding-bottom: 2rem;
+}
+
+.gc-manufacturer::before {
+  content: "Manuf.: ";
+}
+
+.gc-type::before {
+  content: "Type: ";
+}
+
+.gc-red-text-name {
+  color: #BF514F;
+}
+
+.gc-red-text-name::before {
+  color: #CCCCCC;
+
+  content: "Red Text: ";
+}
+
+.gc-red-text-effect {
+  font-family: "Akrobat Semibold", Arial, sans-serif; /* "Arial Narrow", Arial, sans-serif; */
+}
+
+.gc-info {
+  font-family: "Akrobat Semibold", Arial, sans-serif; /* "Arial Narrow", Arial, sans-serif; */
+}
+
+.gc-info::before {
+  content: "Additional info: \A";
+  white-space: pre;
+
+  font-family: "Space Marine", monospace;
+}
